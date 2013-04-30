@@ -1,0 +1,73 @@
+
+
+	------------------------
+	      BANANA DANCE
+	   List of Known Bugs
+	------------------------
+
+Administration		- When adding a new category, it redirect to a 404 with "id=saved" rather than
+			  the actual ID number.
+			- 404 error after editing the base category.
+			- Deleting a page/category doesn't track the ID in "bd_tasks"
+
+Caching			- Need to re-cache category navigation is the linking type changes.
+
+Categories		- Private categories potentially show up in navigation when not logged in.
+
+CSS File		- Need to complete the CSS style editor.
+
+Favorites		- Links to pages wrong.
+	
+Javascript Encoding	- Putting a "+" in username or password messes up login. Due to JS encoding?
+			- Putting a & in a page or category title causes issues.
+
+Login			- Issues in Opera and Internet Explorer?
+
+Pages			- Errors with long page titles. Limit the length.
+
+Registration		- Displayed "Successful" message in an error box.
+			- Prevent emails being used as username.
+			
+Search Results		- Strip HTML from results.
+
+Styles			- Need to use more universal styles for system pages. div.foo, div.foo * { }
+
+Updater			- Total mess right now. Need to re-work the entire system.
+
+Users			- Potential bug deleting users.
+
+
+
+	-----------------------------------
+	           BANANA DANCE
+	   List of Upcoming New Features
+	-----------------------------------
+
+Constants		- Custom caller tags with custom values:
+			  %nav1% = "Settings"
+			  %nav2% = "Company"
+			  This allows you to then change the terminology through the wiki without
+			  needing to go page-by-page to do it.
+
+Hashtags and @user	- Ability to turn these systems on and off.
+
+Indexing		- Delay the indexing of pages post-edit.
+
+Keywords		- Find specific words in pages and auto-link to a page or URL.
+
+Stats			- Ignore specific IPs in stat-tracking page views.
+
+Widgets			- To-Do List: Need to allow users to re-order lists.
+
+
+
+	-----------------------------------
+	           BANANA DANCE
+	   	List of Resolved Bugs
+	-----------------------------------
+
+Widgets			- Need to use standard "Search and Replace" functions for articles
+			  and comments.
+			- Need to display ID in widgets list.
+			- [[Issues with some fields not "Sticking" like category dropdown.]]
+			- [[Errors editing a category page index.]]

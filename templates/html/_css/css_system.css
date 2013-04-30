@@ -1,0 +1,225 @@
+
+/* --  List holding management components -- */
+
+input.sys_field, select.sys_field {
+	font-family: arial, verdana !important;
+	font-size: 13px !important;
+	background-color: #fff !important;
+	padding-top: 4px !important;
+	padding-bottom: 4px !important;
+	padding-left: 8px !important;
+	padding-right: 8px !important;
+	color: #000 !important;
+}
+
+textarea.sys_field {
+	font-family: courier, "courier new", arial !important;
+	font-size: 0.9em !important;
+	padding: 5px !important;
+}
+
+label.sys {
+	padding: 0 !important;
+	text-align: left !important;
+	display: block !important;
+	width: 100%;
+	margin-top: 12px;
+	float: none;
+}
+
+#bd_edit_left {
+	padding: 0 !important;
+	text-align: left !important;
+	font-family: arial, verdana;
+	font-size: 0.9em !important;
+}
+
+#bd_edit_left li {
+	font-family: arial, verdana;
+	font-size: 0.9em !important;
+	color: #fff !important;
+}
+
+#bd_edit_left p {
+	font-family: arial, verdana;
+	font-size: 0.9em !important;
+	color: #fff !important;
+}
+
+ul.bd_options {
+	list-style: none !important;
+	width: 100%;
+	margin: 0 !important;
+	padding: 0 !important;
+	font-size: 0.8em;
+	font-family: tahoma, arial;
+	background: url('../_imgs/manage_bar/manage_bar_back.png') repeat-x top left;
+	color: #fff !important;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	line-height: 39px;
+	-moz-text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+	-webkit-text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+	border-top: 1px solid #000;
+}
+
+ul.bd_options li#bd_manage_article_new {
+	cursor: pointer;
+}
+
+ul.bd_options li:hover {
+	background-color: #000;
+}
+
+ul.bd_options a {
+	color: #A4C4FF !important;
+}
+
+#bd_manage_notices {
+	position: fixed;
+	bottom: 23px;
+	left: 15px;
+	background: url('../_imgs/manage_bar/icon-notices.png') center 3px no-repeat;
+	width: 36px;
+	height: 36px;
+	text-align: center;
+	z-index: 6000;
+}
+
+#bd_notice_number a {
+	position: absolute;
+	top: 9px;
+	left: 0px;
+	width: 36px;
+	text-align: center;
+	font-size: 0.8em;
+	font-family: tahoma, arial;
+	font-weight: bold;
+	color: #fff !important;
+}
+
+ul.bd_options li.first {
+	float: left;
+	padding: 0 10px 0 45px !important;
+	font-weight: bold;
+	border-left: none;
+	height: 39px;
+	background: url('../_imgs/manage_bar/banana_dance_icon.png') bottom left no-repeat;
+}
+
+ul.bd_options li {
+	float: left;
+	padding: 0 10px 0 10px !important;
+	border-right: 1px solid #333;
+	border-left: 1px solid #000;
+	line-height: 39px;
+}
+
+/* ----  ---- */
+
+ul#widget_options {
+	list-style: none;
+	margin: 29px 0 0 0;
+	padding: 0;
+	width: 19%;
+	float: left;
+}
+
+ul#widget_options li {
+	padding: 0 4px 0 4px;
+	height: 25px;
+	line-height: 25px;
+	border-bottom: 1px solid #e1e1e1;
+	cursor: pointer;
+}
+
+ul#widget_options li.on {
+	font-weight: bold;
+	background-color: #d1d1d1;
+}
+
+#widget_right {
+	width: 80%;
+	margin-left: 19%;
+}
+
+#display_widget_details {
+	background-color: #e5e5e5;
+	border-top: 1px solid #d1d1d1;
+	border-left: 3px solid #d1d1d1;
+	border-right: 1px solid #c1c1c1;
+	border-bottom: 1px solid #c1c1c1;
+	height: 458px;
+	overflow: auto;
+}
+
+#widg_left_pad {
+	padding: 24px;
+}
+
+p.field_help {
+	margin: 0 0 8px 0;
+	font-size: 0.75em !important;
+	color: #777;
+}
+
+ul.standard_list {
+	list-style: square inside;
+	margin: 12px 18px 12px 18px;
+}
+
+ul#widgets_top {
+	margin: 0;
+}
+
+ul#widgets_top li {
+	display: inline-block;
+	padding: 0 6px 0 6px;
+	cursor: pointer;
+	height: 29px;
+	line-height: 29px;
+}
+
+ul#widgets_top li.on {
+	font-weight: bold;
+}
+
+ul#widgets_top li.cancel {
+
+}
+
+#widgets_instructions {
+	float: right;
+	width: 250px;
+	margin: 0 0 24px 24px;
+}
+
+ol.widget_directions {
+	margin: 0;
+}
+
+table#widgets_table {
+	vertical-align: top;
+}
+
+table#widgets_table td {
+	padding: 4px;
+	border-bottom: 1px solid #d1d1d1;
+}
+
+table#widgets_table th {
+	text-align: left;
+	font-weight: bold;
+	padding: 4px;
+	border-bottom: 2px solid #d1d1d1;
+}
+
+#bd_widgets_add {
+	font-family: arial, verdana;
+	font-size: 0.8em;
+	color: #111;
+	padding: 20px;
+}
+

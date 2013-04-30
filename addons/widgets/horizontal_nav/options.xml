@@ -1,0 +1,24 @@
+<all_options>
+	<option1>
+		<ref>use_images</ref>
+		<display_name>Images or Text Links?</display_name>
+		<desc>Would you like to use images or text links?</desc>
+		<default_value>Text</default_value>
+		<order>1</order>
+		<field>
+			<type>select</type>
+			<selections>Text,Images</selections>
+			<width>100</width>
+		</field>
+	</option1>
+	<option2>
+		<ref>display_base_category</ref>
+		<display_name>Display Home Category?</display_name>
+		<desc>Would you like to display you base home category in the menu?</desc>
+		<default_value>0</default_value>
+		<order>2</order>
+		<field>
+			<type>yes_no</type>
+		</field>
+	</option2>
+</all_options>

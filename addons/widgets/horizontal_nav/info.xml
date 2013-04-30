@@ -1,0 +1,10 @@
+<plugin>
+  <name>Horizontal Navigation</name>
+  <desc>Creates a horizontal navigation bar using your base categories and pages.</desc>
+  <version>v1.2</version>
+  <developer>Jon Belelieu</developer>
+  <developer_url>http://www.bananadance.org/</developer_url>
+  <img_location>http://www.bananadance.org/imgs/logos/logo_200w.png</img_location>
+  <plugin_page>http://www.bananadance.org/Plugins/Horizontal-Navigation-Menu</plugin_page>
+  <screen_shot></screen_shot>
+</plugin>

@@ -1,0 +1,1 @@
+<span style="padding-right:12px;">Guest</span><a href="#" onclick="showLogin();return false;">Login</a> - <a href="#" onclick="showRegister();return false;">Register</a>

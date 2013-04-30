@@ -1,0 +1,334 @@
+
+
+	BANANA DANCE
+	List of Updates
+
+
+1 May 2012 (vB.2.6)
+----------------------
+
+- Images: True Form method can be used to bypass the DIV element. Syntax:
+	((/path/to/img.png|true))
+- Tagging: Unwanted tags no longer detected, such as HTML color codes.
+- Profiles: New profile feature providing a "Feed" of information as well
+  as profile postings between users.
+- Widgets: Ability to create custom feeds directly on your website.
+- Hompage: Bug with category homepage settings solved. Issues with category
+  homepages within sub-categories not being detected solved.
+- Media Library: Some issues with incorrect paths and thumbnails solved.
+- Issues with special characters in page titles solved.
+    Characters = + / -
+- Categories: Delete category in manage bar bug solved. Previously
+  deleted the page you were viewing.
+- Search: Improved search results, included rated results, and better
+  handling of snippets with caller tags.
+  Added ajax search features. The following changes are required to header.php:
+    - Search field -> #search_input (ID)
+    - Search field -> autocomplete=off
+    - Search form -> onsubmit="return submit_search();"
+
+
+30 March 2012 (vB.2.5)
+----------------------
+
+- Printing: Issues with "Not Found" error when printing pages solved.
+- Notices: Comment posted issue with link to article solved.
+- Media Library: Solved issue with layout on small screens.
+- Internet Explorer: Solved issues with the admin control panel.
+- Prepopulattion: The "New" page screen can now be pre-populated
+  with a preset template for specific categories.
+- Footnotes: Added footnotes to the program.
+- Custom Replacements: Set up as many custom replacements
+  as you wish to automatically do one of the following with
+  a specified string:
+  - Link to a page
+  - Create a help bubble
+  - Make a straight replacement
+- SSL connections are now considered when creating headers.
+	**IMPORTANT**
+	This requires that you change the following in config.php:
+	This: define('URL',
+	Becomes: define('URLHOLD',
+- Backups: Dtabase backups as well as automated theme file backups.
+- Stripped Privileges: ability to strip privileges from user
+  groups in specific categories.
+- Widgets: Article data is filtered through the proper
+  function allowing for a fuller set of caller tags.
+- New caller tags: %article_image% and %article_image_div%
+  take the first image in an article and allow you to
+  use it in widgets.
+- Meta Description: if none is provided, the program will
+  use the page's snippet as the description.
+- Meta keywords: if none are provided, the program will use
+  a page's tags as the keywords.
+- Search results page title now correct.
+- Improved article snippets to end on a sentence.
+- Issues with long page titles resolved.
+- Issues with breadcrumbs having trailing "junk" resolved.
+- Admin logout link working.
+
+
+21 February 2012 (vB.2.4)
+-------------------------
+
+- Media library: some issues with duplicate images
+  being added solved, as well as some safety
+  precautions against unwanted path adjustments.
+- Widgets: Several issues with widgets have been
+  resolved, includings issues creating a category index,
+  as well as issues with editing fields not having
+  the correct valus.
+- Widget Editing: HTML/HTML Entry content for some
+  widget types has been added.
+- Recent Category Pages Widget: category now taken
+  into account.
+
+
+30 January 2012 (vB.2.3)
+------------------------
+
+- Issues with logins not "sticking" solved. Issue
+  was caused by the server time being out-of-sync
+  with the program's time.
+- Facebook Connect code updated. perms -> scope
+- Ability to run PHP code on pages.
+  Turn on the option is "Performance".
+- Auto-create option for 404 not found pages.
+- Page Viewing: Issues loading some pages solved.
+- Page Names: Issues loading a page if a page by
+  the same name was in another category solved.
+- Widgets: revamped widgets: now part of an inline
+  creator and editor. New widget types added:
+  - Tag Cloud
+  - To Do List
+  - Videos
+  - Maps
+  - Calendars
+  - Spreadsheets
+  - Page Date List
+- Plugin system extended to include options that
+  can be edited from the admin control panel as well
+  as a plugin page for each plugin. You can also now
+  use the {-plugin_name-} syntax to include a plugin
+  on a page or a template.
+
+
+6 December 2011 (vB.2.2)
+------------------------
+
+- User privacy settings.
+- User options: editor type (wiki/WYSIWYG) and email format.
+- Improved JavaScript experience.
+- Google Analytics Integration.
+- Logo uploader.
+- v2 Themes finalized.
+- Related pages list.
+- Page tag list.
+- Improved login, registration, etc.
+- Bugs with comment follow up notices solved.
+- Some Media Library bugs solved.
+- Improved page load times be placing some JavaScript in the footer.
+
+
+18 November 2011 (vB.2.1)
+-------------------------
+
+- Bottom bar improved: more options and stays on while
+  using the admin control panel.
+- Incorporated @username syntax.
+- Allow page tagging through the #hashtag syntax.
+  These tags are also searchable.
+- Various changes to improve user friendliest and workflow.
+- Bugs with category navigation and page creation solved.
+- Optimized the .htaccess file for better filtering.
+
+
+13 November 2011 (vB.2.0)
+-------------------------
+
+- Admin control panel completely re-designed.
+- Most features have been improved to be more user-friendly.
+- New page creation follows the category you click through
+  to on the category tree.
+- Category menu only displays categories if a user has
+  access to the category.
+- Page locking.
+
+
+26 October 2011 (vB.1.7)
+------------------------
+
+- Media gallery, image tagging, and built-in uploading of images added.
+- WYSIWYG editor added: Thanks to CLEditor!
+- Incorrect favorite count display solved.
+- Notices: issues with user notices being assigned to user ID "0" solved.
+- RSS: Header issues solved. Oops!
+
+
+3 October 2011 (vB.1.6)
+-----------------------
+
+- Access controls to categories based on user type or user.
+- Inline comment type editing added.
+- Added additional language file references.
+
+
+2 October 2011 (vB.1.5)
+-----------------------
+
+- Program auto-adds required CSS/JavaScripts into program headers.
+- Improved performance of javascript: removed several divs which are
+  now dynamically generated by the program.
+- User profile information updated.
+- Easy linking to a user's profile using "user:username" syntax in links.
+- Images enlarged when clicked.
+
+
+27 September 2011 (vB.1.4)
+--------------------------
+
+- Horizontal navigation plugin improved.
+- Forced page redirects.
+- Table syntax simplified; ability to create complex tables.
+- Validation issues corrected with lists and internal links.
+- Smarter help bubbles won't go off page.
+- Automated database backups added.
+- One-click updating added!
+- Added meta information to page and category defaults.
+- Links in comments now format properly.
+
+
+22 September 2011 (vB.1.3)
+--------------------------
+
+- Added compression and caching to the .htaccess file.
+- Fixed some issues with the formatting guide, page rendering,
+  and page previewing.
+- New shortcut on edit screen: CTRL-Q to minimize/maximize edit screen
+- Minify HTML code.
+
+
+15 September 2011 (vB.1.2)
+--------------------------
+
+- Some issues with code blocks solved.
+- Template editing: project creator for tabbed editing of templates.
+- New "Blank Slate" theme for full website development.
+
+
+12 September 2011 (vB.1.1)
+--------------------------
+
+- Default article settings: general and by category.
+- Rewrite rules changed. No longer use "article" or "page" in the URL:
+	This: http://www.yoursite.com/article/Home/Welcome
+	Becomes: http://www.yoursite.com/Home/Welcome
+- Edit article name now in the inline editor.
+- Horizontal navigation plugin updated.
+- New theme: starter site.
+- Setup updated.
+- GeSHi available for code blocks.
+- Simplified list syntax. No longer need [list][/list] and [numberlist][/numberlist].
+
+
+6 September 2011 (vB.1.0)
+--------------------------
+
+- Maintenance status for articles.
+- Public user profile + separation between private and public.
+- Improved threaded comments feature.
+
+
+
+2 September 2011 (vB.0.9)
+-------------------------
+
+- Split up CSS into 4 files for easier editing and quicker loading.
+- E-Mail article to friends.
+- Printer-friendly article layouts.
+- Ability to print to PDF, categories and articles.
+- Ability to print entire categories.
+- Favorite articles and follow articles.
+- Templates: added support for additional headers/footers as well as article page layouts.
+- Expanded the product owner's manual.
+- Added the ability to implement columns into a category indexing widget.
+- Improved search to search sub-categories within a category.
+- Extended language file.
+- Smilies in comments and articles.
+- Point system: requirements for performing tasks; point granting when completing a task.
+- Badge system.
+- Added additional options to articles: "default display comment type" and "comment threading style" options.
+
+
+24 August 2011 (vB.0.8)
+-----------------------
+
+- Ability to add "direct linking" to the primary navigation menu.
+- Comment threading styles: tree (standard) or forum (expands subcomments when clicked).
+
+
+23 August 2011 (vB.0.7)
+-----------------------
+
+- Comment counts now accurate when a comment type is changes; subcomments also get changed to this type.
+- Ability to alter a comment's article.
+- Image uploading + smart re-sizing.
+- Grant user-by-user access to private articles.
+
+
+18 August 2011 (vB.0.6)
+-----------------------
+
+- Downloadable files with with online uploader.
+- Center/right align text.
+- Performance testing.
+- Improved options efficiency.
+- Added comment caching.
+- User management screen, public member screen.
+- Article caching.
+
+
+17 August 2011 (vB.0.5)
+-----------------------
+
+- Added plugin support and easy installation of plugins.
+- Added security against common exploits.
+- Inline article editing and creation.
+- Option to display the login menu to all or just admins.
+
+
+15 August 2011 (vB.0.4)
+-----------------------
+
+- Added a simple (albeit growing) language file.
+- Added a logged in management bar that is fixed to the bottom of a page.
+- Added widgets: http://www.doyoubananadance.com/community/article/Articles/Widgets
+- Added URL redirection for changed article names.
+- Submitting a form using enter saves the changes.
+- CTRL-S works throughout the control panel.
+
+
+13 August 2011 (vB.0.3)
+-----------------------
+
+- Logic for sidebar updated: if there is only 1 article or a home article is set for a category, it will instantly redirect to that article when clicked. Otherwise it will expand the category and display article options.
+- Various changes to classes to increase efficiency.
+
+
+11 August 2011 (vB.0.3)
+-----------------------
+
+- Sidebar: if there is only 1 article in a category the program links directly to it rather than refreshing the menu.
+- Admin news now drawn live from the Banana Dance website.
+- Category RSS feed generation.
+- Improved options layout.
+- Added new option: "Required Registration Fields"
+
+
+10 August 2011 (vB.0.2)
+-----------------------
+
+- Issues with "member only" pages solved.
+- Added more caller tags to the various templates.
+- Improved layout of the default article page.
+- Improved the program setup for better clarity.

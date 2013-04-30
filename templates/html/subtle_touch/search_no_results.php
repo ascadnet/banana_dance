@@ -1,0 +1,1 @@
+<p class="small italic">There were no results for your search query.</p>

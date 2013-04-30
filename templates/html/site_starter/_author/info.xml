@@ -1,0 +1,8 @@
+<plugin>
+  <folder_name>site_starter</folder_name>
+  <name>Starter Site</name>
+  <desc>A good starter theme for a basic website layout.</desc>
+  <type>combo</type>
+  <developer>Jon Belelieu</developer>
+  <developer_url>http://www.doyoubananadance.com/</developer_url>
+</plugin>

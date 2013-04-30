@@ -1,0 +1,78 @@
+
+	HORIZONTAL NAVIGATION MENU
+	Banana Dance Plugin
+	by Jon Belelieu
+	--------------------------
+	
+
+	OVERVIEW
+	--------
+
+This plugin will create a horizontal navigation bar which contains links to:
+	- All categories located within the base category of your website.
+	- All pages within those categories.
+
+
+
+	OPTIONS
+	-------
+
+Display Home Category?
+	Determines if you wish to include the "Base" category navigation menu.
+	If set to "Yes", a "Home" link will appear at the start of the menu.
+
+Images or Text Links?
+	Determines if the program will display images or text links.
+	If you set this to images, the images will be named as follows:
+		nav-CLEAN_CATEGORY_NAME.png
+	"CLEAN_CATEGORY_NAME" is determined as follows:
+		- All words are lower case.
+		- Spaces become underscores "_".
+		- Example: "Test Category" would be "nav-test_category.png"
+		- Images need to be uploaded to your theme's image folder:
+			/templates/html/THEME_NAME/imgs
+
+
+
+	STYLING
+	-------
+
+You can edit the style sheet for the theme by editing the "style.css" file.
+
+	**IMPORTANT**
+
+If your program is not installed to the root directory of your website, you
+will need to open and edit the style sheet to upload the path of your images
+accodingly. Example (presuming you installed to "http://www.yoursite.com/wiki/"):
+
+	Default:
+	background: url('/addons/widgets/horizontal_nav/imgs/hor-nav-bg.png') repeat-x top left #000;
+	background: url('/addons/widgets/horizontal_nav/imgs/hor-nav-bg1.png') #000;
+
+	Change To:
+	background: url('/wiki/addons/widgets/horizontal_nav/imgs/hor-nav-bg.png') repeat-x top left #000;
+	background: url('/wiki/addons/widgets/horizontal_nav/imgs/hor-nav-bg1.png') #000;
+
+
+
+	RENDERED LIST
+	-------------
+
+The rendered list will look like this:
+
+<ul id="hnav_primary">
+	<li id="hnav_m_0" class="main_li nav_home">
+		<a href="(category_link)">Home</a>
+		<ul id="hnav_category0" class="hnav_articles" style="display:none;">
+			<li><a href="(page_link)">(page_name)</a></li>
+			<li><a href="(page_link)">(page_name)</a></li>
+		</ul>
+	</li>
+	<li id="hnav_m_(category_id)" class="main_li nav_(lower case page name)">
+		<a href="(category_link)">(Category Name)</a>
+		<ul id="hnav_category(category_id)" class="hnav_articles" style="display:none;">
+			<li><a href="(page_link)">(page_name)</a></li>
+			<li><a href="(page_link)">(page_name)</a></li>
+		</ul>
+	</li>
+</ul>

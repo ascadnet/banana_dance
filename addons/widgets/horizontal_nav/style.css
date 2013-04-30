@@ -1,0 +1,71 @@
+/* ------------------------------------------------
+
+	Banana Dance Plugin
+	"Horizontal Navigation Bar"
+	Ascad Networks
+	http://www.ascadnetworks.com/
+
+------------------------------------------------ */
+
+
+/* -- PRIMARY NAVIGATION BAR -- */
+
+ul#hnav_primary {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background: url('/addons/widgets/horizontal_nav/imgs/hor-nav-bg.png') repeat-x top left #000;
+	-moz-text-shadow: 1px 1px 0 rgba(0, 0, 0, 1);
+	-webkit-text-shadow: 1px 1px 0 rgba(0, 0, 0, 1);
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 1);
+	font-size: 10pt;
+	color: #fff;
+}
+
+ul#hnav_primary li.main_li {
+        display: -moz-inline-stack;
+        display: inline-block;
+	line-height: 35px;
+	height: 35px;
+        zoom: 1;
+        *display: inline;
+        _height: 35px;
+	padding: 0 10px 0 10px;
+        vertical-align: top;
+}
+
+ul#hnav_primary li.on {
+	background-color: #000;
+}
+
+ul#hnav_primary a {
+	text-decoration: none;
+}
+
+
+/* -- CATEGORY ARTICLE LISTS -- */
+
+ul.hnav_articles {
+	z-index: 8999;
+	position: absolute;
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	font-size: 10pt;
+	color: #5081B9;
+	background: url('/addons/widgets/horizontal_nav/imgs/hor-nav-bg1.png') #000;
+}
+
+ul.hnav_articles li {
+	display: block;
+	padding: 8px;
+	border-bottom: 1px solid #333;
+	border-top: 1px solid #111;
+}
+
+ul.hnav_articles li:hover {
+	background-color: #222;
+	display: block;
+}
